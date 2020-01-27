@@ -2,8 +2,6 @@
   'use strict';
   Drupal.behaviors.bodyToggle = {
     attach: function (context, settings) {
-      $('body', context).once('boddyToggle').append('<button id="theme-toggler">Toggle</button>');
-
       if($.cookie('bodyclass')) {
         $('body').addClass( $.cookie('bodyclass') );
       }
