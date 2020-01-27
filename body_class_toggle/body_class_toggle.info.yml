@@ -1,0 +1,5 @@
+name: 'body_class_toggle'
+type: module
+description: 'Toggle body class based on cookie'
+core: 8.x
+package: 'Custom'

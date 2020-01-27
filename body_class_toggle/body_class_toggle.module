@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains body_class_toggle.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function body_class_toggle_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the body_class_toggle module.
+    case 'help.page.body_class_toggle':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Toggle body class based on cookie') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function body_class_toggle_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'body_class_toggle/body_class_toggle';
+}

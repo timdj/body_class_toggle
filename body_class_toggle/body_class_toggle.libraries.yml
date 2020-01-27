@@ -1,0 +1,9 @@
+body_class_toggle:
+  version: VERSION
+  header: true
+  js:
+    js/body_class_toggle.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.cookie
