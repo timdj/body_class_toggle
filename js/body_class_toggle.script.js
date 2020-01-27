@@ -6,7 +6,7 @@
         $('body').addClass( $.cookie('bodyclass') );
       }
       else{
-        $('body').addClass('light-mode'); // set default theme. No need to set via php now
+        $('body').addClass('light-mode');
       }
 
       $('#theme-toggler', context).once('bodyToggle').click(function(){
